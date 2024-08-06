@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tailwind</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main
+      class="p-10 bg-slate-100 h-screen flex flex-col justify-center items-center"
+    >
+      <div id="top" class="flex flex-col mt-auto">
+        <hgroup>
+          <span
+            id="test"
+            class="text-3xl font-semibold text-zinc-950 font-serif"
+            >HTML Tailwind</span
+          >
+          <ol class="flex flex-col gap-y-2 my-3">
+            <li class="text-sm">
+              1. Get started by editing: <code>index.html</code> file.
+            </li>
+            <li class="text-sm">2. Save the file to see the changes.</li>
+            <li class="text-sm">
+              3. Open the browser and navigate to
+              <a href="http://localhost:4000" class="text-blue-700 underline"
+                >http://localhost:4000</a
+              >
+              to see your project in action!
+            </li>
+          </ol>
+        </hgroup>
+        <div id="btn" class="flex items-center gap-x-2">
+          <button
+            class="bg-zinc-900 text-white px-4 py-2 rounded-md"
+            id="countBtn"
+          >
+            Count: <span id="count">0</span>
+          </button>
+          <button
+            class="bg-transparent text-zinc-900 px-4 py-2 rounded-md hover:bg-slate-200"
+            id="learnBtn"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+      <div id="bottom" class="flex items-center gap-x-4 mt-auto">
+        <a
+          href="https://tailwindcss.com/"
+          class="text-sm flex items-center gap-x-2 underline"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
+            />
+          </svg>
+          Tailwind CSS</a
+        >
+        <a
+          href="https://www.w3.org/TR/html52/"
+          class="text-sm flex items-center gap-x-2 underline"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
+            />
+          </svg>
+          HTML5</a
+        >
+      </div>
+    </main>
+    <script>
+      const btn = document.getElementById("countBtn");
+      const count = document.getElementById("count");
+      btn.addEventListener("click", () => {
+        count.innerHTML = +count.innerHTML + 1;
+      });
+    </script>
+  </body>
+</html>
